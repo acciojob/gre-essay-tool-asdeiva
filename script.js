@@ -1,11 +1,10 @@
 //your code here
 let evaluatedText=document.getElementById("evaluatedText");
-let letterCount=document.getElementById("letterCount");
+let wordCount=document.getElementById("wordCount");
 
-evaluatedText.addEventListener("input",calculateLength)
+evaluatedText.addEventListener("input",calculateWord
 
-	function calculateLength() {
+	function calculateWord() {
 		let word = evaluatedText.value;
-		let wordLength = word.length;
-		letterCount.innerHTML = wordLength;
+		letterCount.innerHTML = word.split(" ").length;;
 	}
